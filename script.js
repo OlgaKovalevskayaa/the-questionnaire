@@ -42,21 +42,6 @@ form.addEventListener("submit", (event) => {
         .then((data) => {
             console.log(data)
             alert("Запись успешно внесена");
-
-            fetch('http://46.21.248.81:3001/my-users', {
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        'Authorization': 'Bearer: OlgaKovalevskayaa'
-                    },
-                })
-                .then((result) => {
-                    return result.json()
-                })
-                .then(() => {})
-                .catch((error) => {
-                    console.log(error);
-                })
         })
         .catch((error) => {
             console.log(error);
@@ -66,3 +51,18 @@ form.addEventListener("submit", (event) => {
             document.querySelector(".form").reset();
         })
 });
+
+// fetch('http://46.21.248.81:3001/my-users', {
+//     headers: {
+//         'Accept': 'application/json',
+//         'Content-Type': 'application/json',
+//         'Authorization': 'Bearer: OlgaKovalevskayaa'
+//     },
+// })
+// .then((result) => {
+//     return result.json()
+// })
+// .then(() => {})
+// .catch((error) => {
+//     console.log(error);
+// })
