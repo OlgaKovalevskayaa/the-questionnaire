@@ -53,9 +53,7 @@ form.addEventListener("submit", (event) => {
                 .then((result) => {
                     return result.json()
                 })
-                .then((data) => {
-                    console.log(data)
-                })
+                .then(() => {})
                 .catch((error) => {
                     console.log(error);
                 })
